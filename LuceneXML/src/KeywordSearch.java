@@ -85,21 +85,39 @@ public class KeywordSearch {
         	if (queryType.equals("1")){
         		System.out.print("Enter termID to search: ");
         		String queryTermID = input.nextLine();
-        		List<IndexItem> result = searcher.findByTermID(queryTermID, DEFAULT_RESULT_SIZE);
+        		List<IndexItem> result = null;
+				try {
+					result = searcher.findByTermID(queryTermID, DEFAULT_RESULT_SIZE);
+				} catch (java.text.ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
         		print(result);
         	}
         	//search by label
         	else if (queryType.equals("2")){
         		System.out.print("Enter Label to search: ");
         		String queryLabel = input.nextLine();
-        		List<IndexItem> result = searcher.findByLabel(queryLabel, DEFAULT_RESULT_SIZE);
+        		List<IndexItem> result = null;
+				try {
+					result = searcher.findByLabel(queryLabel, DEFAULT_RESULT_SIZE);
+				} catch (java.text.ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
         		print(result);
         	}
         	//search by search label
         	else if (queryType.equals("3")){
         		System.out.print("Enter Search Label to search: ");
         		String querySearchLabel = input.nextLine();
-        		List<IndexItem> result = searcher.findBySearchLabel(querySearchLabel, DEFAULT_RESULT_SIZE);
+        		List<IndexItem> result = null;
+				try {
+					result = searcher.findBySearchLabel(querySearchLabel, DEFAULT_RESULT_SIZE);
+				} catch (java.text.ParseException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
         		print(result);
         	}
 

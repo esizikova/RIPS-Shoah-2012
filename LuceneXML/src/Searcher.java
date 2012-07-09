@@ -1,7 +1,18 @@
 import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
+
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.document.Document;
+import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryParser.QueryParser;
+import org.apache.lucene.search.IndexSearcher;
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.ScoreDoc;
+import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.util.Version;
 
 
 class Searcher{
@@ -23,7 +34,13 @@ class Searcher{
 	//find indexed items by termID
 	public List<IndexItem> findByTermID(String queryString, int numOfResults) throws ParseException, IOException {
 		//create query from the incoming query string
-		Query query = termIDQueryParser.parse(queryString);
+		Query query = null;
+		try {
+			query = termIDQueryParser.parse(queryString);
+		} catch (org.apache.lucene.queryParser.ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//execute the query and get results
 		ScoreDoc[] queryResults = searcher.search(query, numOfResults).scoreDocs;
 		List<IndexItem> results = new ArrayList<IndexItem>();
@@ -37,7 +54,13 @@ class Searcher{
 	//find indexed items by label
 	public List<IndexItem> findByLabel(String queryString, int numOfResults) throws ParseException, IOException{
 		//create query from incoming query string
-		Query query = labelQueryParser.parse(queryString);
+		Query query = null;
+		try {
+			query = labelQueryParser.parse(queryString);
+		} catch (org.apache.lucene.queryParser.ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//execute the query and get results
 		ScoreDoc[] queryResults = searcher.search(query, numOfResults).scoreDocs;
 		List<IndexItem> results = new ArrayList<IndexItem>();
@@ -51,7 +74,13 @@ class Searcher{
 	//find indexed items by search label
 	public List<IndexItem> findBySearchLabel(String queryString, int numOfResults) throws ParseException, IOException{
 		//create query from incoming query string
-		Query query = searchLabelQueryParser.parse(queryString);
+		Query query = null;
+		try {
+			query = searchLabelQueryParser.parse(queryString);
+		} catch (org.apache.lucene.queryParser.ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		//execute the query and get results
 		ScoreDoc[] queryResults = searcher.search(query, numOfResults).scoreDocs;
 		List<IndexItem> results = new ArrayList<IndexItem>();
