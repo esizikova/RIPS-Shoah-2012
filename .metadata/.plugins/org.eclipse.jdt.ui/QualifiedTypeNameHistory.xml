@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.lucene.search.IndexSearcher"/>
+<fullyQualifiedTypeName name="org.apache.lucene.queryParser.QueryParser"/>
+<fullyQualifiedTypeName name="org.apache.lucene.index.IndexReader"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="org.apache.lucene.search.Query"/>
+<fullyQualifiedTypeName name="org.apache.lucene.search.ScoreDoc"/>
+<fullyQualifiedTypeName name="org.apache.lucene.index.IndexWriter"/>
+<fullyQualifiedTypeName name="org.apache.lucene.index.IndexWriterConfig"/>
+<fullyQualifiedTypeName name="org.apache.lucene.util.Version"/>
+<fullyQualifiedTypeName name="org.apache.lucene.store.FSDirectory"/>
+<fullyQualifiedTypeName name="org.apache.lucene.index.Term"/>
+<fullyQualifiedTypeName name="org.apache.lucene.document.Document"/>
+<fullyQualifiedTypeName name="org.apache.lucene.document.Field"/>
+<fullyQualifiedTypeName name="org.apache.lucene.analysis.standard.StandardAnalyzer"/>
+</qualifiedTypeNameHistroy>
