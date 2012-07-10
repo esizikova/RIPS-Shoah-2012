@@ -7,7 +7,6 @@
  */
 
 
-
 /*import java.io.File;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -17,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;*/
 import java.io.*;
 import java.util.*;
+import java.lang.*;
 
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.Document;
@@ -43,20 +43,18 @@ import org.apache.lucene.util.*;
 public class KeywordSearch {
 	//location where the index will be stored
 	private static final String INDEX_DIR = "keywordList";
-	private static final int DEFAULT_RESULT_SIZE = 10;
-        
+	private static final int DEFAULT_RESULT_SIZE = 100000;
+    static String term = null;
+    static String queryNum = null;
+	public static File file2 = new File("English.csv");  // file in which results of the code will be saved
+	
     public static void main(String[] args) throws IOException, ParseException {
-        //items to be indexed
-        IndexItem[] indexItems = {
-        	new IndexItem("1", "food", "cookies"),
-        	new IndexItem("1", "food", "candy"),
-        	new IndexItem("1", "food", "food"),
-        	new IndexItem("2", "emotion", "happiness"),
-        	new IndexItem("3", "blood", "Type A"),
-        	new IndexItem("2", "emotion", "sadness"),
-        	new IndexItem("1", "food", "pudding"),
-        	new IndexItem("1", "food", "chocolate pudding")
-        };
+
+    	// import the XML file (replace with correct addresss)
+        XML2List xmlListConverter = new XML2List("/home/lena/Documents/CS_Projects/RIPS-Shoah-2012/LuceneXML/src/Thesaurus2_xml_ver2.xml");
+        ArrayList<IndexItem> indexItems = xmlListConverter.getIndexingTerms();
+
+        
         //creating indexer and indexing the items
         Indexer indexer = new Indexer(INDEX_DIR);
         for (IndexItem indexItem : indexItems){
@@ -65,70 +63,50 @@ public class KeywordSearch {
         //close the index
         indexer.close();
         
-        Scanner input = new Scanner(System.in);
-        System.out.println("Type Q/q to quit.");
-        System.out.println("Type 1 to query by termID.");
-        System.out.println("Type 2 to query by Label.");
-        System.out.println("Type 3 to query by Search Label.");
-        
         //creating the searcher to same location as the indexer
         Searcher searcher = new Searcher(INDEX_DIR);
         
-        do{
-        	System.out.print("Enter input: ");
-        	String queryType = input.nextLine();
-        	
-        	if (queryType.equalsIgnoreCase("q")){
-        		break;
-        	}
-        	//search by termID
-        	if (queryType.equals("1")){
-        		System.out.print("Enter termID to search: ");
-        		String queryTermID = input.nextLine();
-        		List<IndexItem> result = null;
-				try {
-					result = searcher.findByTermID(queryTermID, DEFAULT_RESULT_SIZE);
-				} catch (java.text.ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-        		print(result);
-        	}
-        	//search by label
-        	else if (queryType.equals("2")){
-        		System.out.print("Enter Label to search: ");
-        		String queryLabel = input.nextLine();
-        		List<IndexItem> result = null;
-				try {
-					result = searcher.findByLabel(queryLabel, DEFAULT_RESULT_SIZE);
-				} catch (java.text.ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-        		print(result);
-        	}
-        	//search by search label
-        	else if (queryType.equals("3")){
-        		System.out.print("Enter Search Label to search: ");
-        		String querySearchLabel = input.nextLine();
-        		List<IndexItem> result = null;
-				try {
-					result = searcher.findBySearchLabel(querySearchLabel, DEFAULT_RESULT_SIZE);
-				} catch (java.text.ParseException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-        		print(result);
-        	}
+        //import queries file
+        File file1 = new File("/home/lena/Dropbox/RIPS-Shoah/keyword search/queries.txt"); // replace with your address
+        Scanner newScan = new Scanner(file1);
+        String [] query = new String [228];
+        PrintWriter output = new PrintWriter(new FileWriter(file2, false));  // change
 
-        }while (true);
+        for (int k = 0; k < 228; k++){   // for each query, input into Lucene and search
+        	query[k] = newScan.nextLine();
+        	String [] parts1 = query[k].split("\\t");  // split the query into query number and query word
+
+        	
+        	queryNum = parts1[0];
+        	term = parts1[1];
+
+        	List<IndexItem> result = null;
+			try {
+				result = searcher.findBySearchLabel(term, DEFAULT_RESULT_SIZE); 
+			} catch (java.text.ParseException e) {
+				e.printStackTrace();
+			}
+			
+        	print(output, result);
+        }
+        output.flush();
+        output.close();
+        System.out.println("Your file has been saved. Search results are recorded in English.csv");
         searcher.close();
     }
-    //print results
-    private static void print(List<IndexItem> result) {
-    	//System.out.println("Result Size: " + result.size());
-    	for (IndexItem item : result) {
-    		System.out.println(item);
-    	}
+    //print results into the text file
+    private static void print(PrintWriter output, List<IndexItem> result) throws FileNotFoundException, IOException {
+
+    		for (int m = 0; m < result.size(); m++){
+  
+				String result1 = (result.get(m)).toString();
+				String printMe = (((queryNum.concat(",")).concat(result1)).concat(",")).concat(term);
+				// in the line below, both m and m+1 must be indices of elements in result
+				if ((m + 1 < result.size())&&(!(result.get(m + 1).equals(result.get(m))))){   
+					output.println(printMe);
+				}
+				
+    		}
+    	
     }
 }

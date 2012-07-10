@@ -17,6 +17,7 @@ class Indexer{
 		//create the index
 		if (indexWriter == null) {
 			indexWriter = new IndexWriter(FSDirectory.open(new File("keywordList")), new IndexWriterConfig(Version.LUCENE_36, new StandardAnalyzer(Version.LUCENE_36)));
+			indexWriter.deleteAll();
 		}
 	}
 	//add items to index
