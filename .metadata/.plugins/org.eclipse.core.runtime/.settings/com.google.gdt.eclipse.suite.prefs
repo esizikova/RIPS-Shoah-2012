@@ -1,0 +1,4 @@
+#Tue Jul 10 09:55:00 PDT 2012
+eclipse.preferences.version=1
+addedNewWizardActions1.2_org.eclipse.jst.j2ee.J2EEPerspective=com.google.gdt.eclipse.suite.wizards.newProjectWizard|com.google.gwt.eclipse.core.newModuleWizard|com.google.gwt.eclipse.core.newHostPageWizard|com.google.gwt.eclipse.core.newEntryPointWizard|com.google.gwt.eclipse.core.newClientBundleWizard|com.google.gwt.eclipse.core.newUiBinderWizard
+SdkRegistrants_1335689655247=com.google.appengine.eclipse.sdkbundle_1.6.4.v201203300216r37,com.google.gwt.eclipse.sdkbundle_2.4.0.v201203300216-rel-r37

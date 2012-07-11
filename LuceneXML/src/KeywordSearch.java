@@ -14,31 +14,17 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;*/
-import java.io.*;
-import java.util.*;
-import java.lang.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.Document;
-
-//import org.apache.lucene.queryParser.ParseException;
-import org.apache.lucene.queryParser.*;
-
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
-
-/*import org.apache.lucene.index.IndexReader;
-import org.apache.lucene.index.IndexWriter;
-import org.apache.lucene.index.IndexWriterConfig;
-import org.apache.lucene.index.Term;*/
-import org.apache.lucene.index.*;
-
-import org.apache.lucene.search.*;
-
-//import org.apache.lucene.store.FSDirectory;
-import org.apache.lucene.store.*;
-
-//import org.apache.lucene.util.Version;
-import org.apache.lucene.util.*;
+import org.apache.lucene.document.Field.Index;
+import org.apache.lucene.queryParser.ParseException;
 
 public class KeywordSearch {
 	//location where the index will be stored
@@ -49,11 +35,12 @@ public class KeywordSearch {
 	public static File file2 = new File("English.csv");  // file in which results of the code will be saved
 	
     public static void main(String[] args) throws IOException, ParseException {
-
+        System.out.println("start");
+        
     	// import the XML file (replace with correct addresss)
         XML2List xmlListConverter = new XML2List("/home/lena/Documents/CS_Projects/RIPS-Shoah-2012/LuceneXML/src/Thesaurus2_xml_ver2.xml");
         ArrayList<IndexItem> indexItems = xmlListConverter.getIndexingTerms();
-
+        System.out.println("XML loaded");
         
         //creating indexer and indexing the items
         Indexer indexer = new Indexer(INDEX_DIR);
