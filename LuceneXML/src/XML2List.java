@@ -48,16 +48,28 @@ public class XML2List{
                                             .getNodeValue(); //get termID (element 0)
                             
                             /*String type = nodeList.item(1).getChildNodes().item(0)
-                                    		.getNodeValue(); //get type*/
+                            			.getNodeValue(); //get type*/
                             
-                            String label = nodeList.item(2).getChildNodes().item(0)
-                                            .getNodeValue(); //get label (element 2)
- 
-                            String searchlabel = nodeList.item(3).getChildNodes().item(0)
-                                            .getNodeValue(); //get searchlabel (element 3)
+                            String label;
+                            try{
+                            	label = nodeList.item(2).getChildNodes().item(0)
+                            			.getNodeValue(); //get label (element 2)
+                            }
+                            catch(NullPointerException err){
+                            	label = "ERROR";
+                            }
+                            
+                            String searchLabel;
+                            try{
+                            	searchLabel = nodeList.item(3).getChildNodes().item(0)
+                            			.getNodeValue(); //get searchlabel (element 3)
+                            }
+                            catch(NullPointerException err){
+                            	searchLabel = "ERROR";
+                            }
                             
                             //add to array list
-                            temp.add(new IndexItem(termID, label, searchlabel));
+                            temp.add(new IndexItem(termID, label, searchLabel));
                         }
                     }
                 
