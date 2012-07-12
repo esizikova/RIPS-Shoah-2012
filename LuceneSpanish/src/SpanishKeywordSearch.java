@@ -7,6 +7,7 @@
  */
 
 
+
 /*import java.io.File;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,35 +15,46 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;*/
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
-import org.apache.lucene.document.Field.Index;
-import org.apache.lucene.queryParser.ParseException;
+import org.apache.lucene.document.Field;
+import org.apache.lucene.document.Document;
 
-public class KeywordSearch {
+//import org.apache.lucene.queryParser.ParseException;
+import org.apache.lucene.queryParser.*;
+
+import org.apache.lucene.analysis.es.SpanishAnalyzer;//changed to Spanish
+
+/*import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.index.IndexWriter;
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.Term;*/
+import org.apache.lucene.index.*;
+
+import org.apache.lucene.search.*;
+
+//import org.apache.lucene.store.FSDirectory;
+import org.apache.lucene.store.*;
+
+//import org.apache.lucene.util.Version;
+import org.apache.lucene.util.*;
+
+public class SpanishKeywordSearch {
 	//location where the index will be stored
 	private static final String INDEX_DIR = "keywordList";
 	private static final int DEFAULT_RESULT_SIZE = 100000;
-    static String term = null;
+	static String term = null;
     static String queryNum = null;
-	public static File file2 = new File("English.csv");  // file in which results of the code will be saved
-	
+	public static File file2 = new File("Spanish.csv");
+        
     public static void main(String[] args) throws IOException, ParseException {
+        //items to be indexed
         file2.delete();
         System.out.println("start");
-        
-    	// import the XML file (replace with correct addresss)
         XML2List xmlListConverter = new XML2List("/home/lena/Documents/CS_Projects/RIPS-Shoah-2012/LuceneXML/src/Thesaurus2_xml_ver2.xml");
         ArrayList<IndexItem> indexItems = xmlListConverter.getIndexingTerms();
         System.out.println("XML loaded");
-        
         //creating indexer and indexing the items
         Indexer indexer = new Indexer(INDEX_DIR);
         for (IndexItem indexItem : indexItems){
@@ -63,7 +75,6 @@ public class KeywordSearch {
         for (int k = 0; k < 228; k++){   // for each query, input into Lucene and search
         	query[k] = newScan.nextLine();
         	String [] parts1 = query[k].split("\\t");  // split the query into query number and query word
-
         	
         	queryNum = parts1[0];
         	term = parts1[1];
@@ -79,12 +90,11 @@ public class KeywordSearch {
         }
         output.flush();
         output.close();
-        System.out.println("Your file has been saved. Search results are recorded in English.csv");
+        System.out.println("Your file has been saved. Search results are recorded in Spanish.csv");//changed to Spanish
         searcher.close();
     }
-    //print results into the text file
+    //print results
     private static void print(PrintWriter output, List<IndexItem> result) throws FileNotFoundException, IOException {
-
     	for (int m = 0; m < result.size() - 1; m++){
 			String result1 = (result.get(m)).toString();
 			String result2 = (result.get(m + 1)).toString();
@@ -96,7 +106,6 @@ public class KeywordSearch {
 			else{
 			output.println(printMe);
 			}
-    	}//slight change, still same result
-    	
+    	}//same as in English version
     }
 }

@@ -14,7 +14,7 @@ class Searcher{
 	public Searcher(String keywordList) throws IOException{
 		//open the index directory to search
 		searcher = new IndexSearcher(IndexReader.open(FSDirectory.open(new File(keywordList))));
-		StandardAnalyzer analyzer = new StandardAnalyzer(Version.LUCENE_36);
+		SpanishAnalyzer analyzer = new SpanishAnalyzer(Version.LUCENE_36);//changed both anaylzers to Spanish
 		//defining the query parser to search items by termID field, label field, and search label field
 		termIDQueryParser = new QueryParser(Version.LUCENE_36, IndexItem.TERMID, analyzer);
 		labelQueryParser = new QueryParser(Version.LUCENE_36, IndexItem.LABEL, analyzer);

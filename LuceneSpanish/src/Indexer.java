@@ -7,7 +7,8 @@ class Indexer{
 	public Indexer(String indexDir) throws IOException {
 		//create the index
 		if (indexWriter == null) {
-			indexWriter = new IndexWriter(FSDirectory.open(new File("keywordList")), new IndexWriterConfig(Version.LUCENE_36, new StandardAnalyzer(Version.LUCENE_36)));
+			indexWriter = new IndexWriter(FSDirectory.open(new File("keywordList")), new IndexWriterConfig(Version.LUCENE_36, new SpanishAnalyzer(Version.LUCENE_36)));//changed to Spanish
+			indexWriter.deleteAll();//added
 		}
 	}
 	//add items to index
