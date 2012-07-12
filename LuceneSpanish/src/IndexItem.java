@@ -29,6 +29,6 @@ public class IndexItem{
 	
 	@Override
 	public String toString(){
-		return termID + "," + label + "," + searchLabel;
+		return termID + "," + searchLabel;
 	}
 }

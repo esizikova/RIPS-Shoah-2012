@@ -1,0 +1,228 @@
+1	sobreviviente culpa segunda generación 
+2	auschwitz
+3	95
+4	esconder comida auschwitz
+5	sugihara
+6	sigi hart
+7	homosexual
+8	robert clary
+9	holocausto
+10	noche de los cristales rotos
+11	3658
+12	Werner Bab
+13	treblinka
+14	renee firestone
+15	polonia
+16	peter hersch
+17	varsovia
+18	gueto Varsovia
+19	berlin
+20	esconder comida
+21	praga
+22	buchenwald
+23	schindler
+24	sobibor
+25	comida
+26	resistencia
+27	loza checoslovaquia
+28	Wallenberg
+29	gemelos
+30	gueto
+31	campo de concentración
+32	musica
+33	alemania
+34	mengele
+35	50338
+36	eugenecia
+37	suiza
+38	george
+39	marcha de muerte
+40	sonderkommando
+41	aborto
+42	Carolina del Norte
+43	sed durante deportaciones
+44	violación
+45	50657
+46	praga
+47	experimentos médicos
+48	Daniel Dares Zaidman
+49	lodz
+50	dinero en campo de concentración
+51	sexual assault
+52	12005
+53	22211
+54	mauthausen
+55	gay
+56	babi yar
+57	sobreiviente
+58	deportación sed
+59	50517
+60	fe
+61	dachau
+62	hambre
+63	Gerda Klein
+64	Marko Feingold
+65	sobrevivientes de sidney
+66	campo de concentración
+67	esconder
+68	motin del gueto de varsovia
+69	Vilna
+70	checo
+71	armenia
+72	Tom Lantos
+73	gueto de lodz
+74	morris glass
+75	esterilización 
+76	transporte de niños
+77	hambre en el gueto de bedzin
+78	50986
+79	chelmno
+80	gad beck
+81	ideología
+82	Adam Helfand
+83	martin aaron
+84	sobreviviente judio
+85	violencia sexual
+86	sydney australia
+87	sobreviviente del Holocausto
+88	50371
+89	Italia
+90	campos de concentración
+91	Rumania
+92	delicado
+93	niños
+94	Strasshof
+95	campos de concentración
+96	loza
+97	francia
+98	judío
+99	terezin
+100	Majdanek
+101	feingold
+102	hannover
+103	dario gabbai
+104	madre varsovia
+105	dennis urstein
+106	krasznai friderika
+107	Jeannette Klebanovas
+108	judio
+109	roma
+110	14613
+111	hersch
+112	Schweiz
+113	Erwin Frank
+114	agnes adachi
+115	experimentos médicos 
+116	sexo
+117	adler
+118	Tarnow
+119	belzec
+120	czchow
+121	Krasznai
+122	Wielopole
+123	firestone
+124	nowy targ
+125	535
+126	nazi
+127	34791
+128	50735
+129	japón
+130	israel
+131	lesbiana
+132	armenio
+133	traición
+134	libertadir
+135	campos de muerte
+136	edith carter
+137	erno abelesz
+138	samuel shemel
+139	Nina Lagergren
+140	mensaje futuro
+141	reacción vecina
+142	melbourne australia
+143	142
+144	7090
+145	sordo
+146	amor
+147	25591
+148	41165
+149	aleman
+150	Tluste
+151	debica
+152	familia
+153	grecia
+154	lustig
+155	gitanos
+156	ucrania
+157	Rochlitz
+158	hermanos
+159	bialystok
+160	fred kort
+161	Cila Aaron
+162	edith dietz
+163	ciudad de méxico
+164	peter hersh
+165	Edward Heisler
+166	Corrie ten Boom
+167	Bella Abramovitz
+168	6155
+169	7584
+170	12062
+171	12345
+172	16457
+173	30731
+174	Letonia
+175	koszeg
+176	Altaras
+177	Olomouc
+178	Español
+179	budapest
+180	nueva york
+181	ted back
+182	bystander
+183	knud dyby
+184	lituania
+185	Ilse Arndt
+186	campo de muerte
+187	experimento
+188	Hamilton ON
+189	antisemitismo
+190	david abrams
+191	maria mandel
+192	Eugenie sharp
+193	Walter Ziffer
+194	neustadt glewe
+195	raoul wallenberg
+196	Red Cross Budapest
+197	sobrevivientes del holocausto
+198	inmigración de suiza
+199	Beaune Rolande correspondencia
+200	1938
+201	3336
+202	sigi
+203	prueba
+204	32671
+205	35935
+206	35975
+207	38870
+208	sarah
+209	rwanda
+210	hungría
+211	salonica
+212	salonika
+213	shangai
+214	cristiano
+215	interprete
+216	propaganda
+217	roman kent
+218	Alice Zadek
+219	Edith Barta
+220	Ellis Lewin
+221	emma albert
+222	inge berner
+223	homosexualidad
+224	Kristine Keren
+225	testigo de jeová
+226	negación del holocausto
+227	inmigración de schweiz
+228	reichs kristallnacht
