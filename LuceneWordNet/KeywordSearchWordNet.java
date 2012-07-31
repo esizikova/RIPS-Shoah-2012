@@ -43,7 +43,7 @@ public class KeywordSearchWordNet {
 	private static final int DEFAULT_RESULT_SIZE = 100000;
 	public static String queryNum;
 	public static String findMe;
-	public static File file2 = new File("English_WordNet.csv");
+	public static File file2 = new File("Swahili_WordNet.csv");
 	public static List<String> synonyms = new ArrayList<String>();
 
     public static void main(String[] args) throws IOException, ParseException {
@@ -95,11 +95,11 @@ public class KeywordSearchWordNet {
         Searcher searcher = new Searcher(INDEX_DIR);
 
         //import queries file
-        File file1 = new File("queries_test.txt");
+        File file1 = new File("sw2en1.txt");
         Scanner newScan = new Scanner(file1);
-        String [] query = new String [4];
+        String [] query = new String [227];
         PrintWriter output = new PrintWriter(new FileWriter(file2, false));
-        for (int k = 0; k < 4; k++){
+        for (int k = 0; k < 227; k++){
         	query[k] = newScan.nextLine();
         	//System.out.println(query[k]);
         	String [] parts1 = query[k].split("\\t");
@@ -126,42 +126,22 @@ public class KeywordSearchWordNet {
     	}
     }
     public static List<String> wordNetStuff(String word) throws FileNotFoundException, IOException, WordNetException {
+    	//Set dictionary location
     	System.setProperty("wordnet.database.dir", "C:\\Program Files (x86)\\WordNet\\2.1\\dict\\");
+    	//create database from dictionary
     	WordNetDatabase database = WordNetDatabase.getFileInstance();
+    	//clear synonym arraylist from last run
     	synonyms.clear();
+    	synonyms.add(word);
+    	//get synsets for query
     	Synset[] set = database.getSynsets(word);
     	for (int q = 0; q < set.length; q++){
-	    	SynsetType type = set[q].getType();
-	    	//for (int t = 0; t < set.length; t++){
-	    	//	System.out.println(set[t]);
-	    	//}
-	    	String type1 = type.toString();
-	    	System.out.println(type1);
-	    	synonyms.clear();
-	    	if (type1.equals("1")){
-	    		for (int p = 0; p < set.length; p++){
-			    	NounSynset nounSynset = (NounSynset)(set[p]);
-					String[] newWords = nounSynset.getWordForms();
-					for (int f = 0; f < newWords.length; f++){
-					    synonyms.add(newWords[f]);
-					    System.out.println(newWords[f]);
-					}
-	    		}
-	    	}
-	    	else if (type1.equals("2")){
-	    		for (int p = 0; p < set.length; p++){
-		    		VerbSynset verbSynset = (VerbSynset)(set[p]);
-		    		String[] newWords = verbSynset.getWordForms();
-		    		for (int f = 0; f < newWords.length; f++){
-		    			//String[] newWords1 = new String[newWords.length];
-		    			//newWords1[f] = newWords[f].toString();
-		    			synonyms.add(newWords[f]);
-		    			System.out.println(newWords[f]);
-		    		}
-		    	}
-	    	}
-	    	else{
-	    		break;
+    		//get synonyms for query
+	    	String[] newWords = set[q].getWordForms();
+	    	for(int f = 0; f < newWords.length; f++){
+	    		//add words to synonym list to be searched
+	    		synonyms.add(newWords[f]);
+	    		//System.out.println(newWords[f]);
 	    	}
     	}
     	return synonyms;
