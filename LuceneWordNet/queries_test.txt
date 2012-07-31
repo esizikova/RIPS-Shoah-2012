@@ -1,0 +1,8 @@
+1	food
+2	nourishment
+3	car
+4	automobile
+5	hiding
+6	conceal
+7	run
+8	jog
