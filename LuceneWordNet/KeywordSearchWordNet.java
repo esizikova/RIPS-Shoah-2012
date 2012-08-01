@@ -43,7 +43,7 @@ public class KeywordSearchWordNet {
 	private static final int DEFAULT_RESULT_SIZE = 100000;
 	public static String queryNum;
 	public static String findMe;
-	public static File file2 = new File("Swahili_WordNet.csv");
+	public static File file2 = new File("English_IMDb_WordNet.csv");
 	public static List<String> synonyms = new ArrayList<String>();
 
     public static void main(String[] args) throws IOException, ParseException {
@@ -95,11 +95,11 @@ public class KeywordSearchWordNet {
         Searcher searcher = new Searcher(INDEX_DIR);
 
         //import queries file
-        File file1 = new File("sw2en1.txt");
+        File file1 = new File("englishIMDb.txt");
         Scanner newScan = new Scanner(file1);
-        String [] query = new String [227];
+        String [] query = new String [1341];
         PrintWriter output = new PrintWriter(new FileWriter(file2, false));
-        for (int k = 0; k < 227; k++){
+        for (int k = 0; k < 1341; k++){
         	query[k] = newScan.nextLine();
         	//System.out.println(query[k]);
         	String [] parts1 = query[k].split("\\t");
@@ -227,16 +227,22 @@ class Searcher{
 		searchLabelQueryParser = new QueryParser(Version.LUCENE_36, IndexItem.SEARCHLABEL, analyzer);
 	}
 	//find indexed items by search label
-	public List<IndexItem> findBySearchLabel(String queryString, int numOfResults) throws ParseException, IOException{
-		//create query from incoming query string
-		Query query = searchLabelQueryParser.parse(queryString);
-		//execute the query and get results
-		ScoreDoc[] queryResults = searcher.search(query, numOfResults).scoreDocs;
+	public List<IndexItem> findBySearchLabel(String queryString, int numOfResults) throws ParseException, IOException, WordNetException{
 		List<IndexItem> results = new ArrayList<IndexItem>();
-		//process the results
-		for (ScoreDoc scoreDoc : queryResults){
-			Document doc = searcher.doc(scoreDoc.doc);
-			results.add(new IndexItem(doc.get(IndexItem.TERMID), doc.get(IndexItem.LABEL), doc.get(IndexItem.SEARCHLABEL)));
+		try{
+			//create query from incoming query string
+			Query query = searchLabelQueryParser.parse(queryString);
+			//execute the query and get results
+			ScoreDoc[] queryResults = searcher.search(query, numOfResults).scoreDocs;
+			//process the results
+			for (ScoreDoc scoreDoc : queryResults){
+				Document doc = searcher.doc(scoreDoc.doc);
+				results.add(new IndexItem(doc.get(IndexItem.TERMID), doc.get(IndexItem.LABEL), doc.get(IndexItem.SEARCHLABEL)));
+			}
+			return results;
+		}
+		catch (ParseException ex) {
+			System.out.println("Parse Exception for: " + queryString);
 		}
 		return results;
 	}
