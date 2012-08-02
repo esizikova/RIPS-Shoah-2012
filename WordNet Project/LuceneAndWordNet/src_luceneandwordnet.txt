@@ -1,0 +1,4 @@
+"\\\\Galileo\\Participants\\cquaranta\\Documents\\JCreator Pro\\MyProjects\\LuceneAndWordNet\\Indexer.java"
+"\\\\Galileo\\Participants\\cquaranta\\Documents\\JCreator Pro\\MyProjects\\LuceneAndWordNet\\IndexItem.java"
+"\\\\Galileo\\Participants\\cquaranta\\Documents\\JCreator Pro\\MyProjects\\LuceneAndWordNet\\KeywordSearchWordNet.java"
+"\\\\Galileo\\Participants\\cquaranta\\Documents\\JCreator Pro\\MyProjects\\LuceneAndWordNet\\Searcher.java"
