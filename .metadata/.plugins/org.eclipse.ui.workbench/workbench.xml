@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="68" version="2.0">
+<workbench progressCount="57" version="2.0">
 <workbenchAdvisor/>
 <window height="746" maximized="true" width="1010" x="127" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -17,7 +17,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="84" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="152" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -26,7 +26,7 @@
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -36,21 +36,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KeywordSearch.java" partName="KeywordSearch.java" path="/home/lena/Documents/CS_Projects/RIPS-Shoah-2012/LuceneXML/src/KeywordSearch.java" title="KeywordSearch.java" tooltip="LuceneXML/src/KeywordSearch.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LuceneXML/src/KeywordSearch.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1423" selectionTopPixel="357"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="XML2List.java" partName="XML2List.java" path="/home/lena/Documents/CS_Projects/RIPS-Shoah-2012/LuceneXML/src/XML2List.java" title="XML2List.java" tooltip="LuceneXML/src/XML2List.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/LuceneXML/src/XML2List.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="787"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -58,8 +47,6 @@
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
-<expanded>&#x0A;<category IMemento.internal.id="Java Problems (81 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.allSeverityField="350" org.eclipse.ui.ide.locationField="105" org.eclipse.ui.ide.markerType="105" org.eclipse.ui.ide.pathField="140" org.eclipse.ui.ide.resourceField="105"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.allSeverityField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -83,7 +70,7 @@
 </view>
 <view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -224,170 +211,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/KeywordSearch.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/XML2List.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/Searcher.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=LuceneSpanish/\/usr\/lib\/jvm\/java-6-openjdk\/jre\/lib\/rt.jar&lt;java.util(ArrayList.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/Indexer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/Searcher.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/XML2List.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/Indexer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/KeywordSearch.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/LuceneXML/src/XML2List.java"/>
-</editors>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1583" y="185"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1583" y="185"/>
-</item>
-<item historyLabel="XML2List.java" index="1">
-<position info="not_deleted" x="2901" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1590" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1484" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1588" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1765" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1765" y="0"/>
-</item>
-<item historyLabel="Searcher.java" index="2">
-<position info="not_deleted" x="742" y="0"/>
-</item>
-<item historyLabel="XML2List.java" index="1">
-<position info="not_deleted" x="2901" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1589" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1765" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position/>
-</item>
-<item historyLabel="XML2List.java" index="1">
-<position info="not_deleted" x="2252" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="1484" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3682" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3016" y="31"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="2350" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3679" y="79"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3016" y="31"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3016" y="31"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3679" y="79"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position/>
-</item>
-<item historyLabel="ArrayList.class" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3016" y="31"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3281" y="0"/>
-</item>
-<item historyLabel="Indexer.java" index="4">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="0">
-<position info="not_deleted" x="3085" y="0"/>
-</item>
-<item historyLabel="Searcher.java" index="5">
-<position info="not_deleted" x="742" y="0"/>
-</item>
-<item historyLabel="XML2List.java" index="6">
-<position info="not_deleted" x="2252" y="0"/>
-</item>
-<item historyLabel="Indexer.java" index="7">
-<position info="not_deleted" x="475" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="5" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="1883" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="1603" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="1524" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="1751" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="2204" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="2065" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="2907" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="5" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="890" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="1374" y="35"/>
-</item>
-<item historyLabel="XML2List.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="1374" y="35"/>
-</item>
-<item active="true" historyLabel="KeywordSearch.java" index="8">
-<position info="not_deleted" x="1399" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
