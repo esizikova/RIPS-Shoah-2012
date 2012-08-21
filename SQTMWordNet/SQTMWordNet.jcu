@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace_user>
+	<active_project>
+		<label>SQTMWordNet</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>SQTMWordNet</label>
+			<showfiles>false</showfiles>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>IndexItem.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>Indexer.java</path>
+			<source>true</source>
+			<index>1</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>KeywordSearchWordNet.java</path>
+			<source>true</source>
+			<index>2</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>Searcher.java</path>
+			<source>true</source>
+			<index>3</index>
+			<active>true</active>
+		</docitem>
+	</open_files>
+</workspace_user>

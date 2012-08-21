@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace_user>
+	<active_project>
+		<label>SQTM</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>SQTM</label>
+			<showfiles>false</showfiles>
+		</project>
+	</projects>
+	<symboltables>
+		<symboltable>
+			<path>C:\Users\cquaranta\Desktop\RIPS\keyword search\IndexItem.java.sdk</path>
+			<symbols>
+				<symbol>IndexItem</symbol>
+				<symbol>String</symbol>
+			</symbols>
+		</symboltable>
+		<symboltable>
+			<path>C:\Users\cquaranta\Desktop\RIPS\keyword search\IndexItem.java.sdk</path>
+			<symbols>
+				<symbol>IndexItem</symbol>
+				<symbol>String</symbol>
+			</symbols>
+		</symboltable>
+		<symboltable>
+			<path>C:\Users\cquaranta\Desktop\RIPS\keyword search\Indexer.java.sdk</path>
+			<symbols>
+				<symbol>Document</symbol>
+				<symbol>EnglishAnalyzer</symbol>
+				<symbol>FSDirectory</symbol>
+				<symbol>Field</symbol>
+				<symbol>File</symbol>
+				<symbol>IOException</symbol>
+				<symbol>Index</symbol>
+				<symbol>IndexItem</symbol>
+				<symbol>IndexWriter</symbol>
+				<symbol>IndexWriterConfig</symbol>
+				<symbol>Indexer</symbol>
+				<symbol>StandardAnalyzer</symbol>
+				<symbol>Store</symbol>
+				<symbol>String</symbol>
+				<symbol>Version</symbol>
+			</symbols>
+		</symboltable>
+		<symboltable>
+			<path>C:\Users\cquaranta\Desktop\RIPS\keyword search\Indexer.java.sdk</path>
+			<symbols>
+				<symbol>Document</symbol>
+				<symbol>EnglishAnalyzer</symbol>
+				<symbol>FSDirectory</symbol>
+				<symbol>Field</symbol>
+				<symbol>File</symbol>
+				<symbol>IOException</symbol>
+				<symbol>Index</symbol>
+				<symbol>IndexItem</symbol>
+				<symbol>IndexWriter</symbol>
+				<symbol>IndexWriterConfig</symbol>
+				<symbol>Indexer</symbol>
+				<symbol>StandardAnalyzer</symbol>
+				<symbol>Store</symbol>
+				<symbol>String</symbol>
+				<symbol>Version</symbol>
+			</symbols>
+		</symboltable>
+		<symboltable>
+			<path>C:\Users\cquaranta\Desktop\RIPS\keyword search\Searcher.java.sdk</path>
+			<symbols>
+				<symbol>ArrayList</symbol>
+				<symbol>Document</symbol>
+				<symbol>EnglishAnalyzer</symbol>
+				<symbol>FSDirectory</symbol>
+				<symbol>File</symbol>
+				<symbol>IOException</symbol>
+				<symbol>IndexItem</symbol>
+				<symbol>IndexReader</symbol>
+				<symbol>IndexSearcher</symbol>
+				<symbol>List</symbol>
+				<symbol>ParseException</symbol>
+				<symbol>Query</symbol>
+				<symbol>QueryParser</symbol>
+				<symbol>ScoreDoc</symbol>
+				<symbol>Searcher</symbol>
+				<symbol>StandardAnalyzer</symbol>
+				<symbol>String</symbol>
+				<symbol>System</symbol>
+				<symbol>Version</symbol>
+			</symbols>
+		</symboltable>
+		<symboltable>
+			<path>C:\Users\cquaranta\Desktop\RIPS\keyword search\Searcher.java.sdk</path>
+			<symbols>
+				<symbol>ArrayList</symbol>
+				<symbol>Document</symbol>
+				<symbol>EnglishAnalyzer</symbol>
+				<symbol>FSDirectory</symbol>
+				<symbol>File</symbol>
+				<symbol>IOException</symbol>
+				<symbol>IndexItem</symbol>
+				<symbol>IndexReader</symbol>
+				<symbol>IndexSearcher</symbol>
+				<symbol>List</symbol>
+				<symbol>ParseException</symbol>
+				<symbol>Query</symbol>
+				<symbol>QueryParser</symbol>
+				<symbol>ScoreDoc</symbol>
+				<symbol>Searcher</symbol>
+				<symbol>StandardAnalyzer</symbol>
+				<symbol>String</symbol>
+				<symbol>System</symbol>
+				<symbol>Version</symbol>
+			</symbols>
+		</symboltable>
+		<symboltable>
+			<path>C:\Users\cquaranta\Desktop\RIPS\keyword search\KeywordSearch.java.sdk</path>
+			<symbols/>
+		</symboltable>
+	</symboltables>
+</workspace_user>

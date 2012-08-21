@@ -1,0 +1,4 @@
+"C:\\Users\\cquaranta\\Desktop\\RIPS\\keyword search\\SQTM\\Indexer.java"
+"C:\\Users\\cquaranta\\Desktop\\RIPS\\keyword search\\SQTM\\IndexItem.java"
+"C:\\Users\\cquaranta\\Desktop\\RIPS\\keyword search\\SQTM\\KeywordSearch.java"
+"C:\\Users\\cquaranta\\Desktop\\RIPS\\keyword search\\SQTM\\Searcher.java"

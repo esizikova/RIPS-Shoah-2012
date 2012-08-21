@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace>
+	<settings>
+		<label>SQTMWordNetRanking</label>
+		<id>0</id>
+		<version>0</version>
+	</settings>
+	<users>
+		<user>
+			<path>SQTMWordNetRanking.jcu</path>
+		</user>
+	</users>
+	<projects>
+		<project>
+			<path>SQTMWordNetRanking.jcp</path>
+		</project>
+	</projects>
+</workspace>

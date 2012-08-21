@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<workspace_user>
+	<active_project>
+		<label>SQTMWordNetCorrectImanol</label>
+	</active_project>
+	<projects>
+		<project>
+			<label>SQTMWordNetCorrectImanol</label>
+			<showfiles>false</showfiles>
+		</project>
+	</projects>
+	<open_files>
+		<docitem>
+			<path>IndexItem.java</path>
+			<source>true</source>
+			<index>0</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>Indexer.java</path>
+			<source>true</source>
+			<index>1</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>KeywordSearchWordNetWithCorrectImanol.java</path>
+			<source>true</source>
+			<index>2</index>
+			<active>true</active>
+		</docitem>
+		<docitem>
+			<path>NewIndexItem.java</path>
+			<source>true</source>
+			<index>3</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>NewIndexer.java</path>
+			<source>true</source>
+			<index>4</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>NewSearcher.java</path>
+			<source>true</source>
+			<index>5</index>
+			<active>false</active>
+		</docitem>
+		<docitem>
+			<path>Searcher.java</path>
+			<source>true</source>
+			<index>6</index>
+			<active>false</active>
+		</docitem>
+	</open_files>
+</workspace_user>

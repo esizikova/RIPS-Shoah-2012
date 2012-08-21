@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+	<settings>
+		<label>SQTMWordNetCorrectImanol</label>
+		<root_path>\</root_path>
+		<output_path>\</output_path>
+		<source_path>\</source_path>
+		<jdkprofile_ref/>
+		<compiler_ref/>
+		<ant_ref/>
+	</settings>
+	<ant_events/>
+	<run_items/>
+	<runtimes>
+		<runtime>
+			<label>&lt;Default&gt;</label>
+			<application_ref/>
+			<applet_ref/>
+			<debugger_ref/>
+			<param/>
+			<run/>
+			<verify>true</verify>
+		</runtime>
+	</runtimes>
+	<libraries/>
+	<files>
+		<include>
+			<fileitem>
+				<path>Indexer.java</path>
+			</fileitem>
+			<fileitem>
+				<path>IndexItem.java</path>
+			</fileitem>
+			<fileitem>
+				<path>KeywordSearchWordNetWithCorrectImanol.java</path>
+			</fileitem>
+			<fileitem>
+				<path>NewIndexer.java</path>
+			</fileitem>
+			<fileitem>
+				<path>NewIndexItem.java</path>
+			</fileitem>
+			<fileitem>
+				<path>NewSearcher.java</path>
+			</fileitem>
+			<fileitem>
+				<path>Searcher.java</path>
+			</fileitem>
+		</include>
+	</files>
+	<tasks/>
+</project>
