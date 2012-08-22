@@ -1,0 +1,27 @@
+************** README File ******************
+
+August 4, 2012
+
+
+
+Translation via Google Translate
+Version 1.0 BETA
+Licence: GNU Public Licence v3.0
+
+SYSTEM PREREQUISITES
+You need to have Python 2.7 or higher installed. The current version was tested and used under Ubuntu3.0.0-19-generic, but the authors expect it 
+function under Windows as well.
+
+INSTALLATION NOTES
+Keep the .py files (dictionary.py and translateScript.py) in the same folder when running.
+
+USAGE INSTRUCTIONS
+1.	Obtain an API key for the Google Translate API (https://developers.google.com/accounts/)
+2. 	Replace the API key in the file dictionary.py with your key
+3.      In the command line window, navigate to the folder Translation
+4.	Type: python ./translateScript.py (for Windows, omit the './')
+5.	Enter the file name containing the lines to be translated, and the relevant languages.
+6. 	The original lines and resulting translations are stored in the file called inputLanguage+outputLanguage+Translation.txt
+	ex. EnFrTranslation.txt
+
+
