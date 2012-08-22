@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/lena/Downloads/lucene-3.6.0" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="/home/lena/Documents/CS_Projects/RIPS-Shoah-2012/Lucene JAR" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="JavaSE-1.6" key="org.eclipse.jdt.ui.last.selected.execution.enviroment"/>
 	<section name="completion_proposal_size">
 	</section>
 	<section name="JavaElementSearchActions">

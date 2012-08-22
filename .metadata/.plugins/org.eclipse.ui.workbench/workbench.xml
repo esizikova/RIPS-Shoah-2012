@@ -230,6 +230,18 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Searcher.java" tooltip="SQTM/src/Searcher.java">
+<persistable path="/SQTM/src/Searcher.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KeywordSearchWordNet.java" tooltip="SQTM/src/KeywordSearchWordNet.java">
+<persistable path="/SQTM/src/KeywordSearchWordNet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IndexItem.java" tooltip="SQTM/src/IndexItem.java">
+<persistable path="/SQTM/src/IndexItem.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Indexer.java" tooltip="SQTM/src/Indexer.java">
+<persistable path="/SQTM/src/Indexer.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="XML2List.java" tooltip="LuceneXML/src/XML2List.java">
 <persistable path="/LuceneXML/src/XML2List.java"/>
 </file>
