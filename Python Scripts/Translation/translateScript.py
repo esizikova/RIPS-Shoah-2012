@@ -13,10 +13,10 @@ outputLanguage = raw_input("Please enter the name of the output language: ")
 
 translationsFile = open(inputLanguage.capitalize()+outputLanguage.capitalize()+"Translation.txt",'w')
 
-
+i = 1
 for word in originalWords:
-	translationsFile.write(word + " | ");
-	translationsFile.write(dictionary.translate(word, inputLanguage, outputLanguage) + "\n")
+	translationsFile.write(str(i)+'	'+dictionary.translate(word, inputLanguage, outputLanguage) + "\n")
+	i+=1
 
 
 

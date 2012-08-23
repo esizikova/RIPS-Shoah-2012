@@ -35,7 +35,7 @@ def retrieve(startTag, endTag, text):
 def translate(text, fromLang, toLang): 
 	import requests    # the module that is required to make the HTTP requests to Google API
         formattedText = formatString(text)  # format text in the desired form
-	r1 = requests.get('https://www.googleapis.com/language/translate/v2?key=AIzaSyAkSkBNjNyZES-6ntjzf0CDcCx9GQoYF2I&source='+fromLang+'&target='+toLang+'&q='+formattedText)   # send the HTTP request to server to translate the text
+	r1 = requests.get('https://www.googleapis.com/language/translate/v2?key={YOUR-API-KEY}&source='+fromLang+'&target='+toLang+'&q='+formattedText)   # send the HTTP request to server to translate the text
 
 
 
